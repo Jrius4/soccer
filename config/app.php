@@ -167,6 +167,7 @@ return [
          */
         Barryvdh\Cors\ServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
         /*
          * Application Service Providers...
          */
