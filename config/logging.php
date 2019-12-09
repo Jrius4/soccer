@@ -40,15 +40,15 @@ return [
             'ignore_exceptions' => false,
         ],
 
-        // 'single' => [
-        //     'driver' => 'single',
-        //     'path' => storage_path('logs/laravel.log'),
-        //     'level' => 'debug',
-        // ],
         'single' => [
-            'driver' => 'errorlog',
+            'driver' => 'single',
+            'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
         ],
+        // 'single' => [
+        //     'driver' => 'errorlog',
+        //     'level' => 'debug',
+        // ],
 
         'daily' => [
             'driver' => 'daily',
