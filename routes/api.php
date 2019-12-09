@@ -13,9 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
 
 Route::resource('/articles', 'ApiControllers\Articles\ArticleController',['as'=>'article']);
 Route::resource('/article-users', 'ApiControllers\Users\UserController',['as'=>'article']);
