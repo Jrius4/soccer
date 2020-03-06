@@ -21,5 +21,13 @@ class DatabaseSeeder extends Seeder
 
         $this->call(ArticlesTableSeeder::class);
         $this->call(WinesTableSeeder::class);
+
+        $this->call(VendorSeeder::class);
+        $this->call(FarmerSeeder::class);
+
+        $this->call(TeamsTableSeeder::class);
+        $this->call(FixturesTableSeeder::class);
+        $this->call(MatchesTableSeeder::class);
+
     }
 }

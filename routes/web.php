@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::resources([
+//     'farmers'=>'FarmerController',
+//     'vendors'=>'VendorController',
+// ]);
+
+Route::get('/{any}','SpaController@index')->where('any','.*');
+
